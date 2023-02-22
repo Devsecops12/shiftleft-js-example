@@ -11,7 +11,7 @@ jobs:
     - name: set node
       uses: actions/setup-node@v3.6.0
       with:
-         node-version: 18
+         node-version: 12
     - name: install command
       run: npm install
       
