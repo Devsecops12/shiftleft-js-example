@@ -1,0 +1,16 @@
+# This workflow integrates ShiftLeft with GitHub
+# Visit https://docs.shiftleft.io for help
+name: build job
+
+on: push
+
+jobs:
+  init:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Setup Java JDK
+      uses: actions/setup-java@v1.4.3
+      with:
+        java-version: 1.8
+    - name: npm install 
+      run: npm install
