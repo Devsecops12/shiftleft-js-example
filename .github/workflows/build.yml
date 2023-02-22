@@ -8,13 +8,12 @@ jobs:
   init:
     runs-on: ubuntu-latest
     steps:
-#     - name: Setup Java JDK
-#       uses: actions/setup-java@v1.4.3
-#       with:
-#         java-version: 1.8
-    - name: set up node
-    - uses: actions/setup-node@v3.6.0
+    - name: set node
+      uses: actions/setup-node@v3.6.0
       with:
-       node-version: 18
+         node-version: 18
+          
+      
+
    
 
